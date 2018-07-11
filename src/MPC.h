@@ -11,6 +11,7 @@ class MPC {
   MPC();
 
   virtual ~MPC();
+  std::vector<double> PredictNextState(std::vector<double> state, std::vector<double> actuations, double latency);
 
   // Solve the model given an initial state and polynomial coefficients.
   // Return the first actuatotions.
