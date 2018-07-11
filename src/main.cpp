@@ -12,6 +12,7 @@
 // for convenience
 using json = nlohmann::json;
 
+bool start_controller = true;
 // For converting back and forth between radians and degrees.
 constexpr double pi() { return M_PI; }
 double deg2rad(double x) { return x * pi() / 180; }
